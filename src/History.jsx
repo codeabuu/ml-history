@@ -173,6 +173,11 @@ export default function History() {
 
   return (
     <div className="history-container">
+      <header className="page-header">
+        <h1 className="page-title">Striker Tips</h1>
+        <p className="page-subtitle">Football predictions &amp; betting tips — daily wins, transparent history</p>
+      </header>
+
       {/* Lightbox */}
       {lightboxImage && !failedImages.has(lightboxImage) && (
         <div
@@ -198,7 +203,7 @@ export default function History() {
             </div>
             <img
               src={lightboxImage}
-              alt={`Full view ${currentIndex + 1}`}
+              alt={`Football prediction tip ${currentIndex + 1}`}
               className="lightbox-img"
               loading="eager"
               onError={(e) => {
@@ -255,7 +260,7 @@ export default function History() {
               >
                 <img
                   src={currentImages[0]}
-                  alt="Latest"
+                  alt="Latest football prediction tip"
                   className="featured-img"
                   loading="eager"
                   fetchPriority="high"
@@ -282,7 +287,7 @@ export default function History() {
                     >
                       <img
                         src={src}
-                        alt={`Result ${index + 2}`}
+                        alt={`Football prediction tip ${index + 2}`}
                         className="grid-img"
                         loading="lazy"
                         fetchPriority="low"
@@ -319,6 +324,10 @@ export default function History() {
           </>
         )}
       </div>
+
+      <footer className="page-footer">
+        <p>Striker Tips — daily football predictions and winning betting tips including BTTS, over 2.5 goals and mega odds. New results added every week and month.</p>
+      </footer>
     </div>
   )
 }

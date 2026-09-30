@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://strikersite.vercel.app/sitemap.xml
