@@ -175,7 +175,7 @@ export default function History() {
     <div className="history-container">
       <header className="page-header">
         <h1 className="page-title">Striker Tips</h1>
-        <p className="page-subtitle">Football predictions &amp; betting tips — daily wins, transparent history</p>
+        <p className="page-subtitle">Football predictions &amp; expert tips — daily wins, transparent history</p>
       </header>
 
       {/* Lightbox */}
